@@ -14,16 +14,16 @@ public class PBOIF210119052Latihan35ProgramTunjangan {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Karyawan karyawan = new Karyawan();
+        Gaji gaji = new Gaji();
         
         System.out.println("===========Program Tunjangan===============");
         System.out.print("Berapa gaji pokok anda perbulan?: Rp.");
-        karyawan.setGaji(scanner.nextDouble());
+        gaji.setGaji(scanner.nextDouble());
         
         System.out.print("Status Anda? (Menikah/Belum)\t: ");
-        karyawan.setStatus(scanner.next());
+        gaji.setStatus(scanner.next());
         
-        karyawan.tampilHasilPerhitungan();
+        gaji.hasilPerhitungan();
     }
     
 }
